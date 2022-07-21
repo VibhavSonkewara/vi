@@ -213,8 +213,8 @@
 
          .alignleft {
             float: left;
-            font-size: larger;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 35px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
         }
         .alignright {
@@ -280,4 +280,11 @@
           tr:hover {background-color: #D6EEEE;}
 
 
-          }
+          #hori{
+            border: 0;
+            height: 0; /* Firefox... */
+            box-shadow: 0 0 10px 1px black;
+        }
+        #hori:after {  /* Not really supposed to work, but does */
+            content: "\00a0";  /* Prevent margin collapse */
+        }
